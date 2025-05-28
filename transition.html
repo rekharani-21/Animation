@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  .transition-example {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 100px 100px;
+
+    /* Longhand properties */
+    transition-property:transform;
+    transition-duration: 0.5s;
+    transition-timing-function:ease;
+    transition-delay: 0s;
+  }
+
+  .transition-example:hover {
+    transform: scale(2);
+    background-color: brown;
+  }
+</style>
+
+<div class="transition-example"></div>
+
+</body>
+</html>

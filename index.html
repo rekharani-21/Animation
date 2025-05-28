@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            height: 15vh;
+            width: 10vw;
+            background-color: black;
+            animation-name: rekha;
+            animation-duration: 10s;
+            animation-delay: 3s;
+            transition-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* this means animation doesnot go to the 0th position it always goes
+             to the last position as we written in keyframes */
+        }
+        main:hover{
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+
+        @keyframes rekha {
+            0% {
+                transform: translateX(0)translateY(0);
+                background-color: blue;
+            }
+
+            25% {
+                transform: translateX(90vw)translateY(85vh);
+                background-color: green;
+            }
+
+            50% {
+                transform: translateX(90vw)translateY(0);
+                background-color: aqua;
+            }
+
+            75% {
+                transform: translateX(0)translateY(85vh);
+                background-color: rgb(77, 77, 99);
+            }
+
+            100% {
+                transform: translateX(85vh)translateY(0);
+                background-color: brown;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main></main>
+</body>
+
+</html>
